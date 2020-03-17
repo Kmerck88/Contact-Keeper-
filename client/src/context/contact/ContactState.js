@@ -19,21 +19,21 @@ import {
                     id: 1, 
                     name: "Jill Keys",
                     email:"jillk@gmail.com", 
-                    phome:"313-777-9311",
+                    phone:"313-777-9311",
                     type: "personal"
                 },
                 {
                     id: 2, 
                     name: " Calvin Keys",
                     email:"calk@gmail.com", 
-                    phome:"313-745-9311",
+                    phone:"313-745-9311",
                     type: "personal"
                 },
                 {
                     id: 3, 
                     name: "Ki Keys",
                     email:"Kik@gmail.com", 
-                    phome:"313-787-4511",
+                    phone:"313-787-4511",
                     type: "professional"
                 }
              ]
