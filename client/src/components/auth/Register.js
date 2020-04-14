@@ -15,27 +15,25 @@ const Register = () => {
 
   const { name, email, password, password2 } = user;
 
-  const onChange = (e) =>
+  const onChange = e =>
     setuUser({ ...user, [e.target.name]: e.target.value });
 
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault();
-    if (name === "" || email === "" || password === "") {
+    if(name === "" || email === "" || password === "") {
       setAlert("Please enter all fields", "danger");
     } else if (password !== password2) {
-      setAlert("Passwords do not match ", "danger");
+      setAlert("Passwords do not match", "danger");
     } else {
-    }
-    console.log("Register submit");
-  };
+      console.log("Register submit");
+  }};
 
   return (
     <div className="form-container">
       <h1>
         Account <span className="text-primary"> Register</span>
       </h1>
-
-      <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit}>
         <div className="form-group">
           <label htmlFor="name"> Name </label>
           <input type="text" name="name" value={name} onChange={onChange} />
