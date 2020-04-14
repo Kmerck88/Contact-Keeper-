@@ -1,6 +1,6 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 const Navbar = ({ title, icon }) => {
   return (
@@ -8,7 +8,7 @@ const Navbar = ({ title, icon }) => {
       <h1>
         <i className={icon} /> {title}
       </h1>
-      <Link>
+     
       <ul>
         <li>
           <Link to='/'>Home</Link>
@@ -23,14 +23,14 @@ const Navbar = ({ title, icon }) => {
           <Link to='/login'>Login</Link>
         </li>
         </ul>
-      </Link>
+ 
     </div>
   );
 };
 
 Navbar.propTypes = {
-  title: propTypes.string.isRequired,
-  icon: propTypes.string
+  title: PropTypes.string.isRequired,
+  icon: PropTypes.string
 };
 
 Navbar.defaultProps = {
