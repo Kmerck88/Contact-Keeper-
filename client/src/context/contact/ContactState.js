@@ -1,22 +1,35 @@
 import React, { useReducer } from 'react';
+<<<<<<< HEAD
 import axios from 'axios';
 import ContactContext from './contactContext';
 import contactReducer from './contactReducer';
 import {
   GET_CONTACTS,
  ADD_CONTACT,
+=======
+import uuid from 'uuid';
+import { ContactContext } from './contactContext';
+import { contactReducer } from './contactReducer';
+import {
+  Add_CONTACT,
+>>>>>>> 087c3e111e0f389a3f9a8381d37edf4f644326b0
   DELETE_CONTACT,
   SET_CURRENT,
   CLEAR_CURRENT,
   UPDATE_CONTACT,
   FILTER_CONTACTS,
+<<<<<<< HEAD
   CLEAR_CONTACTS,
   CLEAR_FILTER,
   CONTACT_ERROR
+=======
+  CLEAR_FILTER
+>>>>>>> 087c3e111e0f389a3f9a8381d37edf4f644326b0
 } from '../types';
 
 const ContactState = props => {
   const initialState = {
+<<<<<<< HEAD
     contacts: null,
     current: null,
     filtered: null,
@@ -156,6 +169,57 @@ const ContactState = props => {
       {props.children}
     </ContactContext.Provider>
   );
+=======
+    contacts: [
+      {
+        id: 1,
+        name: 'Jill Johnson',
+        email: 'jill@gmail',
+        phone: '313-777-9311',
+        type: 'personal'
+      },
+      {
+        id: 2,
+        name: 'Kyle Johnson',
+        email: 'kyle@gmail',
+        phone: '313-773-9351',
+        type: 'personal'
+      },
+      {
+        id: 3,
+        name: 'Kevin Merck',
+        email: 'Kevin@gmail',
+        phone: '313-555-9611',
+        type: 'personal'
+      }
+    ]
+  };
+  
+  const [state, dispatch]= useReducer(contactReducer, initialState); 
+
+// ADD Contact 
+
+// Delete Contact 
+
+// Set Current Contact 
+
+//Clear Current Contact
+
+// Update Contact 
+
+//Filter Contacts 
+
+// Clear Filter 
+
+return (
+  <ContactContext.Provider
+  value={{
+    contacts: state.contacts
+  }}>
+{props.children}
+  </ContactContext.Provider>
+)
+>>>>>>> 087c3e111e0f389a3f9a8381d37edf4f644326b0
 };
 
 export default ContactState;

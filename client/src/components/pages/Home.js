@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useEffect} from 'react'
 import Contacts from '../contacts/Contacts'
 import ContactForm from '../contacts/ContactForm'; 
@@ -21,6 +22,14 @@ const Home = () => {
       <ContactFilter />
       <Contacts />
     </div>
+=======
+import React from 'react'
+
+const Home = () => {
+  return (
+    <div>
+    <h1>Home</h1>
+>>>>>>> 087c3e111e0f389a3f9a8381d37edf4f644326b0
     </div>
   )
 }
