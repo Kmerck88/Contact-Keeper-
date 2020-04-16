@@ -2,8 +2,8 @@
   "name": "client",
   "version": "1.0.0",
   "private": true,
-  "engines": {"node": "12.16.1"
-  
+  "engines": {
+    "node": "12.16.1"
   },
   "dependencies": {
     "axios": "^0.19.2",
