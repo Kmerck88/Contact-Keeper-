@@ -7,15 +7,10 @@ const app = express();
 // Connect Database
 connectDB();
 
-<<<<<<< HEAD
 // Init Middleware 
 app.use(express.json({extended: false}));
 
 
-=======
-// Init Middleware
-app.use(express.json({ extended: false }));
->>>>>>> 9fb8e1e8a00b9a1cf31203af027752dc1b545fc9
 
 // Define Routes
 app.use('/api/users', require('./routes/users'));
